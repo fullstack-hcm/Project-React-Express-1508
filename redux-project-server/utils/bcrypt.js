@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 
-const plainPass = 'Passwordhere';
+const plainPass = 'password1508';
 
 bcrypt.genSalt(10, (err, salt) => {
     if (err) console.error(err);
@@ -10,7 +10,7 @@ bcrypt.genSalt(10, (err, salt) => {
     })
 })
 
-const encryptedPass = '$2b$10$S6jmtN4Lj2tc5ShUZKJcl.ETYYz.pERc1i7Y6lN85RIItZA4P814e';
+// const encryptedPass = '$2b$10$hD7A/gGtcp5ZcEoe/ifUVOSxgkQHwe3ysJd6ooyQjdLWh1.XIaHDG';
 bcrypt.compare(plainPass, encryptedPass, (err, result) => {
     if (err) console.error(err);
     console.log(`result - ${result}`)

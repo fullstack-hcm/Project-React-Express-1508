@@ -28,6 +28,20 @@ const verifyPromise = token => {
     })
 }
 
+// let userObj = {
+//     username: 'abc'
+// };
+// signPromise(userObj)
+//     .then(encryptedString => console.log({ encryptedString }))
+//     .catch(err => console.log({ message: err.message }))
+
+//IIFE
+// (async function run(obj) {
+//     let encryptedString = await signPromise(obj);
+//     console.log({  encryptedString})
+// })(userObj)
+
+
 module.exports = {
     signPromise, verifyPromise
 }
